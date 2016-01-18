@@ -1,0 +1,329 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	color: black;
+	font-weight: 300;
+	font-size: 14px;
+	margin: 0;
+}
+/* sticky navigation bar that's hidden until scrolling */
+#nav {
+	height:55px;
+	width: 100%;
+	position:fixed;
+	padding-top: 2px;
+	top:0;
+	left:0;
+	background-color:#ffffff;
+	z-index:9999;
+	display: none;
+/* drop shadow on navbar */
+	-webkit-box-shadow: 0 10px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 10px 6px -6px #999;
+}
+
+/* start - making the menu on navbar transparent */
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+.navbar li { color: #000
+}
+/* end - making the navbar transparent */
+
+.mousetoHand{
+	cursor: pointer;
+}
+.text-muted {
+	color: #BCBB30;
+}
+b {
+	font-style: bold;
+	color: #005d64;
+}
+.text-thin {
+	font-weight: 100;
+}
+.title-super {
+	font-weight: 900;
+}
+.title-logo {
+	margin-top: 40px;
+}
+p.main {
+	text-align: justify;
+}
+.textContainer {
+	vertical-align: middle;
+	display: inline-block;
+}
+.hrpadding {
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+ul {
+    list-style-position: inside;
+}
+.center {
+    text-align: center;
+}
+
+/* start - removing edge gutter in columns */
+.container-fluid.full-width {
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
+}
+.row.row-no-gutter {
+    margin: 0
+}
+.row.row-no-gutter [class*="col-"] {
+    padding: 0
+}
+.img-full-width {
+    width: 100.5%;
+    height: auto;
+}
+.has-inner .row.row-no-gutter {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.row.row-no-gutter .inner {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* end - removing edge gutter in columns */
+
+.top-buffer {
+	padding-top: 50px;
+}
+.bottom-buffer {
+  padding-bottom: 50px;
+}
+h3 {
+	display: inline;
+}
+h4 {
+  color: #ac0008;
+  text-transform: uppercase;
+}
+
+p.button {
+  text-align: center;
+}
+.aboutHeader {
+    width: 75%;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 10px;
+    border: 2px dotted #ac0008;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    padding: -20px;
+    z-index: 5;
+    background: #fff;
+}
+.clientsHeader {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 10px;
+    border: 2px dotted #ac0008;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    padding: -20px;
+    z-index: 5;
+    background: #fff;
+}
+.constHeader {
+    width: 75%;
+    height: 50%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 10px;
+    border: 2px dotted #ac0008;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    padding: -20px;
+    z-index: 5;
+    background: #fff;
+}
+.stuffBox {
+    border: 3px solid #ac0008;
+    border-radius: 8px;
+    background: #fff;
+    padding: 20px;
+    z-index: 4
+}
+
+.logo-client {
+  padding: 30px;
+  vertical-align: middle;
+}
+.logo-client img {
+  max-height: 80px;
+  opacity: .35;
+
+}
+
+/* align images to bottom of column set */
+@media only screen and (min-width : 768px) {
+
+/* spacing for 3 column set on Services and About sections */
+.row.row-table {
+  display: table;
+}
+/* used for columns for staff profiles
+[class*="col-md-4"] {
+  float: none;
+  width: 33%;
+  display: table-cell;
+  vertical-align: top;
+  position: relative;
+  padding-bottom: 150px;
+}
+*/
+p.img {
+  position: absolute;
+  bottom: 0;
+  /*text-align: center;*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+}
+
+.wrap {
+  /* force the div to properly contain the floated images: */
+  position:relative;
+  float:left;
+  clear:none;
+  overflow:hidden;
+  width: 100%;
+}
+.wrap img {
+  position:relative;
+  z-index:1;
+}
+.wrap .companyName {
+  display:block;
+  color: white;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
+  position:absolute;
+  width:100%;
+  top:15%;
+  left:0;
+  z-index:2;
+  text-align:center;
+}
+.wrap .companyDesc {
+  font-size: 12px;
+  display:block;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+  position:absolute;
+  width:100%;
+  top:1%;
+  left:0;
+  z-index:2;
+  text-align:center;
+}
+.wrap .hr {
+  border:none;
+  border-top:1px dotted;
+  display:block;
+  color: white;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
+  position:absolute;
+  width:100%;
+  top:35%;
+  left:0;
+  z-index:2;
+  text-align:center;
+}
+.companyDescInvs {
+  display:none;
+}
+.input-group[class*="col-"] {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+  .popover   {
+  background-color: #e74c3c;
+  color: #ecf0f1;
+  width: 120px;
+}
+.popover.right .arrow:after {
+  border-right-color: #e74c3c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* logo header */
+header {
+    height:100px;
+    position:fixed;
+    right:0;
+    left:0;
+    z-index:100;
+}
+
+/* Using a <section> with a white background color to cover up main logo on scroll */
+section {
+    background-color: #ffffff;
+    top:210px;
+    position:relative;
+    z-index:200;
+}
+
+@media(max-width: 770px) {
+  header {
+  font-size: 18pt;
+}
+
+/* transparent mini navbar converts to solid bg on media querie */
+@media(max-width: 1200px) {
+.navbar-transparent {
+      background: #ffffff !important; /*Add your own background*/
+  }
+}
+}
+
+/*** media queries ***/
+@media (max-width: 1024px) {
+/* tablets and desktop */
+h1{
+font-size: 2em;
+}
+h2{
+    font-size: 1.25em;
+}
+h4{
+    font-size: 1em;
+    color: #ac0008;
+}
+
+@media (max-width: 768px) {
+/* phones */
+.wrap .companyDesc {
+  display:none;
+}
+.companyDescInvs {
+  display:block;
+}
+.logo-client {
+  height: auto;
+  width: 50%;
