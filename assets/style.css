@@ -1,5 +1,5 @@
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: black;
 	font-weight: 300;
 	font-size: 14px;
@@ -7,19 +7,19 @@ body {
 }
 /* sticky navigation bar that's hidden until scrolling */
 #nav {
-	height:55px;
+	height:70px;
 	width: 100%;
 	position:fixed;
 	padding-top: 2px;
 	top:0;
 	left:0;
-	background-color:#ffffff;
+	background-color:#ac0008;
 	z-index:9999;
 	display: none;
-/* drop shadow on navbar */
+/* drop shadow on navbar
 	-webkit-box-shadow: 0 10px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 10px 6px -6px #999;
+    box-shadow: 0 10px 6px -6px #999; */
 }
 
 /* start - making the menu on navbar transparent */
@@ -28,7 +28,7 @@ body {
    background: transparent;
    border-color: transparent;
 }
-.navbar li { color: #000
+.navbar li { color: #ac0008
 }
 /* end - making the navbar transparent */
 
@@ -74,6 +74,7 @@ ul {
     padding-left: 0;
     padding-right: 0;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 .row.row-no-gutter {
     margin: 0
@@ -101,6 +102,10 @@ ul {
 .bottom-buffer {
   padding-bottom: 50px;
 }
+h1 {
+  font-size: 60px;
+  font-weight: 100;
+}
 h3 {
 	display: inline;
 }
@@ -127,7 +132,7 @@ p.button {
     background: #fff;
 }
 .clientsHeader {
-    width: 50%;
+    width: 70%;
     height: 50%;
     margin: 0 auto;
     position: relative;
@@ -141,7 +146,7 @@ p.button {
     background: #fff;
 }
 .constHeader {
-    width: 75%;
+    width: 70%;
     height: 50%;
     margin: 0 auto;
     position: relative;
@@ -217,7 +222,7 @@ p.img {
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
   position:absolute;
   width:100%;
-  top:15%;
+  top:35%;
   left:0;
   z-index:2;
   text-align:center;
@@ -297,10 +302,10 @@ section {
 /* transparent mini navbar converts to solid bg on media querie */
 @media(max-width: 1200px) {
 .navbar-transparent {
-      background: #ffffff !important; /*Add your own background*/
+      background: #ac0008 !important; /*Add your own background*/
   }
 }
-}
+
 
 /*** media queries ***/
 @media (max-width: 1024px) {
@@ -321,8 +326,14 @@ h4{
 .wrap .companyDesc {
   display:none;
 }
+.wrap .companyName {
+  top:5%;
+}
 .companyDescInvs {
-  display:block;
+  display:block; 
+  font-size: 9pt;
+  text-align:center;
+  margin-top: 30px; 
 }
 .logo-client {
   height: auto;

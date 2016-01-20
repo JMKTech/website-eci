@@ -8,25 +8,64 @@
 		<meta name="keywords" content="Construction, Industrial Painting and Coatings, Environmental, State-of-the-art Industrial Vacuum and hydroexcavation, services, asbestos and hazardous material abatement, vacuum excavation, coatings specialists, Pasco, Richland, Kennewick, Walla Walla, Washington, Pacific Northwest">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- FONTS -->
-		<link href='https://fonts.googleapis.com/css?family=Poppins:400,300,600' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,700,300' rel='stylesheet' type='text/css'>
         <!-- CSS FILES -->
 		<link rel="stylesheet" href="assets/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/style.css">
-        <link rel="stylesheet" href="assets/animate.css">
+        <link rel="stylesheet" href="assets/animate.min.css">
+        <!-- JAVASCRIPT -->
+        <script src="assets/jquery-1.12.0.min.js"></script>
+        <script src="assets/bootstrap.min.js"></script>
+        <script src="assets/scrollto.js"></script>
+        <script src="assets/wow.min.js"></script>
+        <script>
+              new WOW().init();
+        </script>
         <style type="text/css"></style>	
 	</head>
 	<body>
+    <!-- ANIMATED NAV BAR ON SCROLL -->
+    <nav id="nav">
+        <div class="row">
+            <div class="col-lg-5"></div>
+            <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2"><!-- <a href="#" class="scroll-top"><img src="assets/images/JMK-Logo-navbar.jpg" class="center-block" alt="ECI Logo"></a> --></div>
+            <div class="col-xs-8 col-sm-10 col-md-10 col-lg-5">
+                <nav class="navbar navbar-default navbar-transparent">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                                <span class="sr-only">Toggle Navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#"></a>
+                        </div>
+                        <div id="main-nav" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#" class="scroll-link" data-id="about"><strong>About</strong></a></li>
+                                <li><a href="#" class="scroll-link" data-id="clients"><strong>Clients</strong></a></li>
+                                <li><a href="#" class="scroll-link" data-id="construction"><strong>Construction</strong></a></li>
+                                <li><a href="#" class="scroll-link" data-id="environmental"><strong>Environmental</strong></a></li>
+                                <li><a href="#" class="scroll-link" data-id="vacuum"><strong>Vacuum Services</strong></a></li>
+                                <li><a href="#" class="scroll-link" data-id="coatings"><strong>Coatings</strong></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </nav>
 	<div class="container-fluid full-width">
-		<div class="row wrap">
+		<div class="row-fluid wrap">
         	<img src="assets/images/mainBG01.jpg" class="img-responsive center-block animated fadeIn" alt="Map of Tri-Cities">
             <h4 class="companyDesc animated fadeIn" style="animation-delay:1.0s;">ECI is a woman-owned and HUBZone Business.</h4>
-            <h1 class="companyName animated fadeIn">Welcome to ECI Services</h1>
-            <hr class="hr">
+            <h1 class="companyName animated flipInX">Work With Us (Or Something)</h1>
     	</div>
         <div class="container" style="max-width: 1200px;">
         	<div class="row">
                 <h4 class="companyDescInvs">ECI is a woman-owned and HUBZone Business.<br><hr></h4>
-        		<div class="col-md-2 top-buffer"></div>
+        		<div id="about" class="col-md-2 top-buffer"></div>
         		<article class="col-md-4 top-buffer">
                     <div class="aboutHeader animated flipInX" style="visibility: visible; animation-name: flipInX;">
         			<h4>About ECI Services</h4>
@@ -54,19 +93,19 @@
                 <div class="col-md-2 top-buffer "></div>
                 <div class="col-md-12 top-buffer">
                     <blockquote>
-                        <p>"ECI was very easy to work with. They did everything I wanted and were even ahead of schedule. I didn't have to threaten them with immediate destruction, like I usually have to." </p>
-                        <footer>World Dictator</footer>
+                        <p>"ECI was very easy to work with. They did everything I wanted and were even ahead of schedule. I didn't have to choke them by using the force or threaten them with immediate destruction from the Death Star, like I usually have to." </p>
+                        <footer>Darth Vader</footer>
                 </div>
             </div>
             <hr>
         </div>
-        <!--Clients Row -->
-        <div class="container top-buffer" style="width: 65%; max-width: 900px;">
+        <!-- CLIENTS SECTION -->
+        <div id="clients" class="container top-buffer" style="width: 65%; max-width: 900px;">
             <div class="row">
-                <div class="clientsHeader wow animated flipInX" data-wow-delay="0.6s" style="visibility: visible; animation-delay:0.6s; animation-name: flipInX;">
+                <div class="clientsHeader wow fadeIn" data-wow-delay="0.2s">
                 <h4>We've worked with some great people</h4>
                 </div>
-                <div class="col-md-12 top-buffer center wow animated fadeIn" data-wow-delay="0.6s" style="visibility: visible; animation-delay:0.6s; animation-name: fadeIn;">
+                <div class="col-md-12 top-buffer center wow fadeIn" data-wow-delay="0.2s">
                     <ul class="list-unstyled list-inline">
                         <li class="logo-client ">
                             <img src="./assets/images/cda-list-icon.png" alt="City of CDA"></li>
@@ -88,10 +127,10 @@
                 </div>
             </div>
         </div>
-    	<!--Construction Services Section-->
+    	<!-- CONSTRUCTION SERVICES SECTION -->
         <div class="container top-buffer center" style="max-width: 1200px;">
                 <hr>
-                <div class="constHeader wow animated flipInX" data-wow-delay="0.6s" style="visibility: visible; animation-delay:0.6s; animation-name: flipInX;">
+                <div class="constHeader wow fadeIn" data-wow-delay="0.2s">
                 <h4>Construction Services</h4>
                 </div>
                 <div class="col-md-12">
@@ -103,17 +142,26 @@
                 <div class="col-lg-3">QUALITY CONTROL</div>
                 <div class="col-lg-3">TIMELY RESULTS</div>
         </div>
-    	<!--Enivronmental Serices Section-->
-    	<div class="row">
-    	<!--Vacuum Services Section-->
-    	<div class="row">
-    	<!--Coatings Section-->
-    	<div class="row">
+    	<!-- ENVIRONMENTAL SECTION -->
+    	<div class="row"></div>
+    	<!-- VACUUM SERVICES SECTION -->
+    	<div class="row"></div>
+    	<!-- CAOTINGS SECTION -->
+    	<div class="row"></div>
 	</div>
-        <!-- JAVASCRIPT FILES -->
-        <script src="assets/jquery-1.12.0.min.js"></script>
-        <script src="assets/bootstrap.min.js"></script>
-        <script src="assets/scrollto.js"></script>
-        <script src="assets/wow.min.js"></script>
+        <!-- JAVASCRIPT -->
+        <script type="text/javascript">
+        (function($) {
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    if ($(this).scrollTop() > 100) { /* distance of scrolling from top */
+                        $('#nav').fadeIn(500); /* fade in speed rate */
+                    } else {
+                        $('#nav').fadeOut(300); /* fade out speed rate */
+                    }
+                });
+            });
+        })(jQuery);
+        </script>
 	</body>
 </html>
