@@ -32,3 +32,28 @@ if (typeof console === "undefined") {
         log: function() { }
     };
 }
+
+// Navbar appear on scrolling
+(function($) {
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 70) { /* distance of scrolling from top */
+                $('#nav').fadeIn(500); /* fade in speed rate */
+            } else {
+                $('#nav').fadeOut(300); /* fade out speed rate */
+            }
+        });
+    });
+})(jQuery);
+
+// Background Scrolling Parallex
+$(document).ready(function(){
+
+var top_header = $('.frontPage');
+top_header.css({'background-position':'center center'}); // better use CSS
+
+$(window).scroll(function () {
+var st = $(this).scrollTop();
+top_header.css({'background-position':'center calc(50% + '+(st*.5)+'px)'});
+});
+});
