@@ -28,10 +28,18 @@ body {
    background: transparent;
    border-color: transparent;
 }
-.navbar li { color: #ac0008
-}
 /* end - making the navbar transparent */
-
+.navbar .nav > li > a {
+    float: none;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 9px 10px 11px;
+    text-decoration: none;
+    color:  #ddd;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .mousetoHand{
 	cursor: pointer;
 }
@@ -64,6 +72,7 @@ p.main {
 }
 ul {
     list-style-position: inside;
+    text-decoration: none;
 }
 .center {
     text-align: center;
@@ -99,6 +108,9 @@ ul {
 .top-buffer {
 	padding-top: 50px;
 }
+.aboutPadding {
+  padding: 40px;
+}
 .bottom-buffer {
   padding-bottom: 50px;
 }
@@ -113,13 +125,12 @@ h4 {
   color: #ac0008;
   text-transform: uppercase;
 }
-
 p.button {
   text-align: center;
 }
 .aboutHeader {
-    width: 75%;
-    height: 40px;
+    width: 100%;
+    height: 50%;
     margin: 0 auto;
     position: relative;
     bottom: 10px;
@@ -132,10 +143,10 @@ p.button {
     background: #fff;
 }
 .clientsHeader {
-    width: 70%;
+    width: 100%;
     height: 50%;
     margin: 0 auto;
-    position: relative;
+    /*position: relative;*/
     bottom: 10px;
     border: 2px dotted #ac0008;
     border-radius: 10px;
@@ -159,6 +170,34 @@ p.button {
     z-index: 5;
     background: #fff;
 }
+.envHeader {
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 10px;
+    border: 2px dotted #ac0008;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    padding: -20px;
+    z-index: 5;
+    background: #fff;
+}
+.svcsHeader {
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 10px;
+    border: 2px dotted #ac0008;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    padding: -20px;
+    z-index: 5;
+    background: #fff;
+}
 .stuffBox {
     border: 3px solid #ac0008;
     border-radius: 8px;
@@ -166,7 +205,6 @@ p.button {
     padding: 20px;
     z-index: 4
 }
-
 .logo-client {
   padding: 30px;
   vertical-align: middle;
@@ -174,7 +212,18 @@ p.button {
 .logo-client img {
   max-height: 80px;
   opacity: .35;
-
+}
+.quoteSectionColor {
+  background-color: #E6E6E6 !important;
+  height: 200px;
+}
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+  float: none;
+  margin: 0 auto;
 }
 
 /* align images to bottom of column set */
@@ -200,9 +249,9 @@ p.img {
   /*text-align: center;*/
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
 }
-}
+
+} /* closing bracket for 768px media screen */
 
 .wrap {
   /* force the div to properly contain the floated images: */
@@ -215,6 +264,7 @@ p.img {
 .wrap img {
   position:relative;
   z-index:1;
+  width: 100%;
 }
 .wrap .companyName {
   display:block;
@@ -256,11 +306,11 @@ p.img {
   display:none;
 }
 .input-group[class*="col-"] {
-    padding-right: 15px;
-    padding-left: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-  .popover   {
+.popover   {
   background-color: #e74c3c;
   color: #ecf0f1;
   width: 120px;
@@ -279,35 +329,30 @@ p.img {
 
 /* logo header */
 header {
-    height:100px;
-    position:fixed;
-    right:0;
-    left:0;
-    z-index:100;
+  height:100px;
+  position:fixed;
+  right:0;
+  left:0;
+  z-index:100;
 }
 
 /* Using a <section> with a white background color to cover up main logo on scroll */
 section {
-    background-color: #ffffff;
-    top:210px;
-    position:relative;
-    z-index:200;
+  background-color: #ffffff;
+  top:210px;
+  position:relative;
+  z-index:200;
 }
 
-@media(max-width: 770px) {
-  header {
-  font-size: 18pt;
-}
+/*** media queries ***/
 
 /* transparent mini navbar converts to solid bg on media querie */
 @media(max-width: 1200px) {
 .navbar-transparent {
-      background: #ac0008 !important; /*Add your own background*/
+  background: #ac0008 !important; /*Add your own background*/
   }
 }
 
-
-/*** media queries ***/
 @media (max-width: 1024px) {
 /* tablets and desktop */
 h1{
@@ -320,9 +365,16 @@ h4{
     font-size: 1em;
     color: #ac0008;
 }
+}
 
 @media (max-width: 768px) {
 /* phones */
+header {
+  font-size: 18pt;
+}
+p {
+  font-size: 10pt;
+}
 .wrap .companyDesc {
   display:none;
 }
@@ -338,3 +390,6 @@ h4{
 .logo-client {
   height: auto;
   width: 50%;
+}
+.quoteSectionColor {
+  height: 225px;
