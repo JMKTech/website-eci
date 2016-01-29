@@ -22,7 +22,14 @@ body {
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 10px 6px -6px #999; */
 }
-
+#nav2 {
+  display: none;
+  height: 4em;
+  width: 100%;
+  position: relative;
+  top: 0;
+  background-color: #ac0008;
+}
 /* start - making the menu on navbar transparent */
 .navbar {
    background-color: transparent;
@@ -43,10 +50,20 @@ body {
 }
 .frontPage {
   width: 100%;
-  height: 600px;
-  margin-top: 0px;
   background: url(../assets/images/mainBG01.jpg);
+    background-position-x: 50%;
+    background-position-y: 50%; 
+    background-size: cover;   
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-origin: initial;
+    background-clip: border-box;
+    background-color: initial;
   background-size: cover;
+  min-height: 40em;
+  position: relative;
+  background-clip: border-box;
+    
 }
 .mousetoHand{
 	cursor: pointer;
@@ -225,7 +242,7 @@ p.button {
   background-color: #E6E6E6 !important;
   height: 200px;
 }
-.quoteTop {
+.contactTop {
   width: 100%;
   background-color: #E6E6E6 !important;
   opacity: 0.5;
@@ -242,33 +259,6 @@ p.button {
   float: none;
   margin: 0 auto;
 }
-
-/* align images to bottom of column set */
-@media only screen and (min-width : 768px) {
-
-/* spacing for 3 column set on Services and About sections */
-.row.row-table {
-  display: table;
-}
-/* used for columns for staff profiles
-[class*="col-md-4"] {
-  float: none;
-  width: 33%;
-  display: table-cell;
-  vertical-align: top;
-  position: relative;
-  padding-bottom: 150px;
-}
-*/
-p.img {
-  position: absolute;
-  bottom: 0;
-  /*text-align: center;*/
-  margin-left: auto;
-  margin-right: auto;
-}
-
-} /* closing bracket for 768px media screen */
 
 .wrap {
   /* force the div to properly contain the floated images: */
@@ -365,23 +355,50 @@ section {
 
 /* transparent mini navbar converts to solid bg on media querie */
 @media(max-width: 1200px) {
-.navbar-transparent {
-  background: #ac0008 !important; /*Add your own background*/
+  .navbar-transparent {
+    background: #ac0008 !important; /*Add your own background*/
   }
 }
 
 @media (max-width: 1024px) {
 /* tablets and desktop */
-h1{
-font-size: 2em;
-}
-h2{
+  h1  {
+    font-size: 2em;
+  }
+  h2  {
     font-size: 1.25em;
-}
-h4{
+  }
+  h4 {
     font-size: 1em;
     color: #ac0008;
+  }
 }
+
+@media (max-width: 990px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -410,3 +427,53 @@ p {
 }
 .quoteSectionColor {
   height: 225px;
+}
+.frontPage {
+  display: block;
+  background: url(../assets/images/mainBG01.jpg);
+  position: relative;
+  min-height: 8em;
+}
+.contactTop {
+  display: none;
+}
+.contactTopText {
+  display: none;
+}
+#nav {
+  display: none;
+  visibility: hidden;
+}
+#nav2 {
+  visibility: visible;
+  position: fixed;
+  z-index: 9999;
+  display: inline-block;
+}
+
+/* align images to bottom of column set */
+@media only screen and (min-width : 768px) {
+
+/* spacing for 3 column set on Services and About sections */
+.row.row-table {
+  display: table;
+}
+/* used for columns for staff profiles
+[class*="col-md-4"] {
+  float: none;
+  width: 33%;
+  display: table-cell;
+  vertical-align: top;
+  position: relative;
+  padding-bottom: 150px;
+}
+*/
+p.img {
+  position: absolute;
+  bottom: 0;
+  /*text-align: center;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+} /* closing bracket for 768px media screen */
