@@ -39,7 +39,7 @@ body {
 /* end - making the navbar transparent */
 .navbar .nav > li > a {
     float: none;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 26px;
     padding: 9px 10px 11px;
     text-decoration: none;
@@ -63,7 +63,17 @@ body {
   min-height: 40em;
   position: relative;
   background-clip: border-box;
-    
+}
+a {
+  text-decoration: none !important;
+}
+i.Const {
+  font-size: 48px;
+  color: #4d4d4d;
+}
+i.Coat {
+  font-size: 60px;
+  color: #4d4d4d;
 }
 .mousetoHand{
 	cursor: pointer;
@@ -86,6 +96,15 @@ b {
 }
 p.main {
 	text-align: justify;
+}
+p.vacuumSpill {
+  font-size: 14px;
+}
+p.vacuumCall {
+  font-size: 28px;
+}
+p.coatLarge {
+  font-size: 32px;
 }
 .textContainer {
 	vertical-align: middle;
@@ -150,6 +169,10 @@ h3 {
 h4 {
   color: #ac0008;
   text-transform: uppercase;
+}
+h5.ColumnHead {
+  color: #ac0008;
+  font-size: 16px;
 }
 p.button {
   text-align: center;
@@ -297,6 +320,9 @@ p.button {
   z-index:2;
   text-align:center;
 }
+.contactBtnInvs {
+  display: none;
+}
 .wrap .hr {
   border:none;
   border-top:1px dotted;
@@ -352,8 +378,13 @@ header {
 .footer {
   height: 75px;
   background-color: #330002;
+  color: gray;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
   z-index:100;
 }
+
 
 
 /* Using a <section> with a white background color to cover up main logo on scroll
@@ -376,7 +407,7 @@ section {
 @media (max-width: 1024px) {
 /* tablets and desktop */
   h1  {
-    font-size: 2em;
+    font-size: 3em;
   }
   h2  {
     font-size: 1.25em;
@@ -390,6 +421,12 @@ section {
 @media (max-width: 990px) {
     .navbar .nav > li > a {
       font-size: .74em;
+    }
+    .frontPage {
+      display: block;
+      background: url(../assets/images/mainBG01.jpg);
+      position: relative;
+      min-height: 22em;
     }
     /* put menu button on the right
     .navbar-header {
@@ -424,6 +461,9 @@ section {
 header {
   font-size: 18pt;
 }
+  h1  {
+    font-size: 2em;
+  }
 p {
   font-size: 10pt;
 }
@@ -438,6 +478,10 @@ p {
   font-size: 9pt;
   text-align:center;
   margin-top: 30px; 
+}
+.contactBtnInvs {
+  display: inline;
+  text-align: center;
 }
 .logo-client {
   height: auto;
@@ -457,6 +501,25 @@ p {
 }
 .contactTopText {
   display: none;
+}
+
+.sub-footer {
+  height:75px;
+  background-color: #990007;
+  right:0;
+  left:0;
+}
+.footer {
+  height: 45px;
+  background-color: #330002;
+  color: gray;
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  z-index:100;
+}
+.crText {
+  font-size: .7em;
 }
 
 /* #nav {
