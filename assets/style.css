@@ -89,6 +89,9 @@ b {
 	font-style: bold;
 	color: #ac0008;
 }
+img.divider {
+  min-height: 200px;
+}
 .text-thin {
 	font-weight: 100;
 }
@@ -107,8 +110,11 @@ p.vacuumSpill {
 p.vacuumCall {
   font-size: 28px;
 }
-p.coatLarge {
+p.subHeadLarge {
   font-size: 32px;
+}
+p.subHeadMed {
+  font-size: 24px;
 }
 .textContainer {
 	vertical-align: middle;
@@ -122,9 +128,6 @@ ul {
     text-align: left;
     list-style-position: inside;
     text-decoration: none;
-}
-#materials > li {
-  max-height: 50px;
 }
 .center {
     text-align: center;
@@ -275,8 +278,8 @@ p.button {
 }
 .contactTop {
   width: 100%;
-  background-color: #E6E6E6 !important;
-  opacity: 0.5;
+
+
   height: 150px;
   position: absolute;
   top: 37%;
@@ -329,6 +332,16 @@ p.button {
 }
 .contactBtnInvs {
   display: none;
+}
+.contactTopText {
+  display:block;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+
+  top:15%;
+
+  z-index:1;
+
 }
 .wrap .hr {
   border:none;
@@ -422,6 +435,9 @@ header {
         float:left;
         list-style:none;
         position: relative;
+        display: inline-block;
+        width: 150px;
+        margin-left: 30px;
     }
         .tab-links a {
             padding:9px 15px;
@@ -488,6 +504,7 @@ header {
       position: relative;
       min-height: 22em;
     }
+
     /* put menu button on the right
     .navbar-header {
         float: none;
@@ -562,7 +579,9 @@ p {
 .contactTopText {
   display: none;
 }
-
+.companyDesc {
+  display: none;
+}
 .sub-footer {
   height:75px;
   background-color: #990007;
@@ -581,6 +600,7 @@ p {
 .crText {
   font-size: .7em;
 }
+
 
 /* #nav {
   display: none;
@@ -617,5 +637,6 @@ p.img {
   margin-left: auto;
   margin-right: auto;
 }
+
 
 } /* closing bracket for 768px media screen */
