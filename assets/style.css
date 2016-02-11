@@ -91,6 +91,7 @@ b {
 }
 img.divider {
   min-height: 200px;
+  opacity: 0.7;
 }
 .text-thin {
 	font-weight: 100;
@@ -169,8 +170,13 @@ ul {
 .bottom-buffer {
   padding-bottom: 50px;
 }
+.hogwash img {
+  position: relative;
+  top: 75%;
+
+}
 h1 {
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 100;
 }
 h3 {
@@ -186,6 +192,9 @@ h5.ColumnHead {
 }
 p.button {
   text-align: center;
+}
+p.address {
+  font-size: 12px;
 }
 .aboutHeader {
     width: 100%;
@@ -278,12 +287,36 @@ p.button {
 }
 .contactTop {
   width: 100%;
-
-
   height: 150px;
   position: absolute;
-  top: 37%;
+  bottom: 0px;
   z-index: 2;
+}
+.frontPgConctRowRgt {
+  height: 75px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #ac0008;
+  bottom: 0px;
+  opacity: 0.8;
+}
+.frontPgConctRowLft {
+  height: 75px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #ac0008;
+  bottom: 0px;
+  opacity: 0.8;
+}
+.frontPgConctCtrCol {
+  height: 105px;
+  position: absolute;
+  bottom: 0; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
 }
 /* centered columns styles */
 .row-centered {
@@ -313,7 +346,7 @@ p.button {
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
   position:absolute;
   width:100%;
-  top:15%;
+  top:30%;
   left:0;
   z-index:2;
   text-align:center;
@@ -337,11 +370,8 @@ p.button {
   display:block;
   color: white;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
-
   top:15%;
-
   z-index:1;
-
 }
 .wrap .hr {
   border:none;
@@ -539,7 +569,7 @@ header {
   font-size: 18pt;
 }
   h1  {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 p {
   font-size: 10pt;
@@ -580,6 +610,9 @@ p {
   display: none;
 }
 .companyDesc {
+  display: none;
+}
+.phoneButton {
   display: none;
 }
 .sub-footer {

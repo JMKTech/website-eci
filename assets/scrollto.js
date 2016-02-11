@@ -16,7 +16,8 @@ $(document).ready(function() {
         $('#main-nav').toggleClass("open");
     });
 });
-// scroll function
+
+// Navbar menu auto-scroll-to-section function
 function scrollToID(id, speed){
     var offSet = 50;
     var targetOffset = $(id).offset().top - offSet;
