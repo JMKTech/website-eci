@@ -30,7 +30,7 @@
     <nav id="nav">
         <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
-                <a href="#" class="scroll-top"><img src="assets/images/ecsi_logo2.jpg" style="max-height: 50px; padding-top: 8px; padding-left: 15px;" alt="ECI Logo"></a>
+                <a href="#" class="scroll-top"><img src="assets/images/ecsi_logo_navbar.png" style="max-height: 50px; padding-top: 8px; padding-left: 15px;" alt="ECI Logo"></a>
   
             </div>
             <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6 inline-block">
@@ -59,29 +59,26 @@
             </div>
         </div>
     </nav>
+    <!-- FRONT PAGE -->
     <div class="container-fluid full-width">
         <section class="frontPage center">    
-    		<!-- <div class="row-fluid wrap"> -->
-            	<!--<img src="assets/images/mainBG01.jpg" class="img-responsive center-block animated fadeIn" alt="Map of Tri-Cities"> -->
                 <h4 class="companyDesc animated fadeIn" style="animation-delay:1.0s;">ECI is a woman-owned and HUBZone Business.</h4>
-                <h1 class="companyName animated flipInX">You should put a coat(ing) on.</h1>
+                <img src="assets/images/ecsi_logo.png" class="frontPageLogo img-responsive">
+                <h1 class="companyName animated flipInX">You should put a coat[ing] on.</h1>
         <div class="container-fluid full-width">
             <div class="row-fluid full-width contactTop">
-            <!--<div class="col-md-12 wow fadeIn">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p class="contactTopText text-right">509-545-0570</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="contactTopText text-left">Corporate Office<br>306 South 2nd Avenue<br>P.O. Box 1184<br>Pasco, WA 99301</p>
-                        </div>
-                        
-                    </div>
-                </div>-->
-
                 <div class="col-lg-4 col-md-4 col-sm-4 frontPgConctRowLft"></div>
                 <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 frontPgConctCtrCol center">
-                    <h4>Extreme Coatings, Inc</h4><p class="address">306 South 2nd Avenue, P.O. Box 1184<br>Pasco, WA 99301<br><button class="btn btn-sm btn-secondary">509-545-0570</button></p>
+                    <h4>Extreme Coatings, Inc</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button id="contactBtn" class="btn btn-sm btn-secondary">509-545-0570</button><br>
+                            <button id="contactBtn" class="btn btn-sm btn-secondary">Contact Us</button>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="address">306 South 2nd Avenue <br> P.O. Box 1184<br>Pasco, WA 99301<br></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 frontPgConctRowRgt"></div>
             </div>
@@ -90,7 +87,6 @@
         </div>  
         </section>
         <!-- ABOUT SECTION -->
-
         <div class="container">
         	<div id="about" class="row row-centered" style="max-width: 1200px;">
                 <h4 class="companyDescInvs">ECI is a woman-owned and HUBZone Business.<br><hr></h4>
@@ -119,6 +115,7 @@
                             <li>Industrial Painting and Specialty Coatings</li>
                             <li>Industrial Vacuum and Hydro Excavation</li>
                         </ul>
+                        <p><b>Branch Offices are located in Montana and California.</b></P>
                     </div>
                 </div>
             </div>
@@ -479,11 +476,55 @@
             </div>
         </div>
         <!-- FOOTER -->
-        <div class="row-fluid full-width top-buffer sub-footer"></div>
+        <div class="container-fluid full-width center sub-footer">
+            <div class="row-fluid full-width top-buffer">
+                <div class="col-lg-12 col-centered">
+                    <div class="row-fluid" >
+                        <div class="col-md-2 subfooterInfoGone"></div>
+                        <div class="col-md-2 col-sm-3 subfooterInfoGone">
+                            <p>Interested in working for ECI?</p>
+                            <button class="btn btn-lg btn-primary outline">Get in touch</button>
+                        </div>
+                        <div class="col-md-2 col-sm-3 subfooterInfoGone">
+                            <ul class="list-unstyled footerNav" style="margin-left: 30px;">
+                                <li><a href="#" class="scroll-link" data-id="about">About</a></li>
+                                <li><a href="#" class="scroll-link" data-id="coatings">Coatings</a></li>
+                                <li><a href="#" class="scroll-link" data-id="construction">Construction</a></li>
+                                <li><a href="#" class="scroll-link" data-id="environmental">Environmental</a></li>
+                                <li><a href="#" class="scroll-link" data-id="vacuum">Vacuum Services</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-3 subfooterInfoGone">
+                            <p>306 South 2nd Avenue<br>PO Box 1184<br>Pasco, WA 99301<br><i class="fa fa-phone"></i>&nbsp;&nbsp;509-545-0570<br><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;info@eci-svcs.com</p>
+                        </div>
+                        <div id="map" class="col-md-2 col-sm-3 subfooterInfoGone"></div>
+                        <div class="col-md-2 subfooterInfoGone"></div>
+                    </div>
+                    <!-- 768px media querie section -->
+                    <div class="row-fluid subfooterInfoSmall">
+                        <div class="col-sm-6"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;info@eci-svcs.com</p></div>
+                        <div class="col-sm-6"><i class="fa fa-phone"></i>&nbsp;&nbsp;509-545-0570</div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row-fluid full-width footer">
-            <div class="col-lg-4 text-center col-centered">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center col-centered">
                 <p class="text-uppercase crText">&copy; 2016 Extreme Coatings Services, Inc. All Rights Reserved. Site by <a href="http://jmktech.com" target="bobdole">JMK Tech</a></div>
         </div>
 	</div>
+
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 46.229, lng: -119.087},
+            zoom: 14
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+         async defer></script> 
+
 	</body>
 </html>

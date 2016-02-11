@@ -93,6 +93,11 @@ img.divider {
   min-height: 200px;
   opacity: 0.7;
 }
+img.frontPageLogo {
+  max-height: 85px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
 .text-thin {
 	font-weight: 100;
 }
@@ -176,7 +181,7 @@ ul {
 
 }
 h1 {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 100;
 }
 h3 {
@@ -195,6 +200,9 @@ p.button {
 }
 p.address {
   font-size: 12px;
+}
+#contactBtn {
+  margin: 2px;
 }
 .aboutHeader {
     width: 100%;
@@ -422,8 +430,29 @@ header {
 .sub-footer {
   height:250px;
   background-color: #990007;
-  right:0;
-  left:0;
+  color: white;
+}
+.footerNav > li > a {
+  color: white;
+  text-decoration: none;
+}
+.btn.outline {
+    background: none;
+    padding: 12px 22px;
+}
+.btn-primary.outline {
+    border: 2px solid white;
+    color: white;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: gray;
+    border-color: gray;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: black;
+    color: black;
+    background-color: white;
+    box-shadow: none;
 }
 .footer {
   height: 75px;
@@ -434,6 +463,16 @@ header {
   padding-bottom: 30px;
   z-index:100;
 }
+.subfooterInfoSmall {
+  display: none;
+}
+
+#map {
+  width: 250px;
+  height: 100px;
+  background-color: white;
+}
+
 .tabIcons {
   width: 140px;
   height: 140px;
@@ -612,17 +651,27 @@ p {
 .companyDesc {
   display: none;
 }
+.companyName {
+  display: none;
+}
 .phoneButton {
   display: none;
 }
 .sub-footer {
-  height:75px;
+  height:95px;
   background-color: #990007;
   right:0;
   left:0;
 }
+.subfooterInfoGone {
+  display: none;
+}
+.subfooterInfoSmall {
+  display: inline-block;
+  margin-top: -50px;
+}
 .footer {
-  height: 45px;
+  height: 55px;
   background-color: #330002;
   color: gray;
   text-align: center;
